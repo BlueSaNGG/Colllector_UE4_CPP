@@ -38,16 +38,17 @@ public:
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
+	// Dead status
 	bool bDead;
-	
 
-	// Detect collision
+	
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 		float Power;
 
 	UPROPERTY(EditAnywhere)
 		float Power_Treshold;
 
+	// Detect collision
 	// Delegate
 	UFUNCTION()
 		void OnBeginOverlap(class UPrimitiveComponent* HitComp,
